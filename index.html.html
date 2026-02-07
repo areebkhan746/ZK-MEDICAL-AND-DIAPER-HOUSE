@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZK Medical and Diaper House</title>
+<style>
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #eef2f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2e8b57;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+header h1 { margin: 0; font-size: 2.2em; }
+header p { font-size: 1.2em; }
+
+/* Navigation */
+nav {
+    background: #1c3d2d;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+nav a {
+    color: white;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover { color: #25D366; }
+
+/* Sections */
+section {
+    padding: 30px 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    max-width: 1100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+section h2 {
+    text-align: center;
+    color: #2e8b57;
+    margin-bottom: 25px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+/* 3D Product Card */
+.product-card {
+    background: #fff;
+    width: 300px;
+    perspective: 1000px;
+}
+.card-inner {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.product-card:hover .card-inner {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.product-card h3 { color: #2e8b57; margin-bottom: 12px; }
+.product-card ul { padding-left: 20px; }
+.product-card p { margin-top: 10px; font-weight: bold; }
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.whatsapp-btn:hover { background: #128C7E; }
+
+/* Footer */
+footer {
+    background: #1c3d2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .product-grid { justify-content: center; }
+}
+@media screen and (max-width: 768px) {
+    nav a { display: block; margin: 8px 0; }
+    .product-card { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>ZK Medical and Diaper House</h1>
+    <p>Trusted Medicines & Baby Care Products</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>We provide high-quality medicines, baby diapers, and baby products at the best prices.  
+    All baby care and medical products available in one place.</p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+        <!-- Baby Products Section -->
+<div class="product-card">
+    <div class="card-inner">
+        <h3>Baby Products</h3>
+        <p>We provide all essential baby care products:</p>
+        <ul>
+            <li>Baby Oil</li>
+            <li>Baby Shampoo</li>
+            <li>Baby Lotion</li>
+            <li>Baby Bath</li>
+            <li>Baby Cologne</li>
+            <li>Baby Feeder</li>
+            <li>Baby Feeder Cleaner</li>
+            <li>Sunblock</li>
+            <li>Facewash</li>
+            <li>Baby Soap</li>
+            <li>Diaper Cream</li>
+            <li>Baby Prickly Heat Cream</li>
+            <li>Soft Cream</li>
+            <li>Cold Cream</li>
+            <li>Lip Balm</li>
+            <li>Baby Vaseline</li>
+            <li>Baby Powders</li>
+        </ul>
+        <p style="margin-top:10px; font-weight:bold;">Available Brands: Nexton, Mothercare, Johnsons</p>
+    </div>
+</div>
+
+<!-- Diapers Section -->
+<div class="product-card">
+    <div class="card-inner">
+        <h3>Diapers</h3>
+        
+        <!-- Baby Diapers -->
+        <h4 style="color:#2e8b57; margin-top:10px;">Baby Diapers</h4>
+        <ul>
+            <li>Leo</li>
+            <li>Babyji</li>
+            <li>Bonapapa</li>
+            <li>Momse</li>
+            <li>Susu</li>
+            <li>Me & My</li>
+            <li>Canbebe</li>
+            <li>CareBaby</li>
+            <li>Sukoon</li>
+            <li>EasyWear</li>
+            <li>Cojin</li>
+            <li>Hero</li>
+            <li>ONO (Paints) </li>
+            <li>Momse (Paints)</li>
+        </ul>
+
+        <!-- Adult Diapers -->
+        <h4 style="color:#2e8b57; margin-top:10px;">Adult Diapers</h4>
+        <ul>
+            <li>EasyWear</li>
+            <li>Dr Sorex</li>
+            <li>Filly (Pants)</li>
+        </ul>
+
+        <p style="margin-top:10px; font-weight:bold;">
+            Available All  Brands 
+        </p>
+    </div>
+</div>
+
+       <!-- Medicines Section -->
+<div class="product-card">
+    <div class="card-inner">
+        <h3>Medicines</h3>
+        <p>Available from all major Pakistani companies:</p>
+        <ul>
+            <li>GlaxoSmithKline (GSK)</li>
+            <li>Reckitt Benckiser</li>
+            <li>Pfizer</li>
+            <li>Abbott</li>
+            <li>Sanofi</li>
+            <li>Getz Pharma</li>
+            <li>Hilton Pharma</li>
+            <li>Ferozsons Laboratories</li>
+            <li>Highnoon</li>
+            <li>Platinum</li>
+            <li>Searle</li>
+            <li>ATCO</li>
+            <li>AGP</li>
+            <li>Martin Dow</li>
+            <li>PharmEvo</li>
+            <li>Indus Pharma </li>
+        </ul>
+    </div>
+</div>
+
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>ZK Medical and Diaper House has been serving families with trusted healthcare and baby care products. We offer a wide range of medicines from leading Pakistani companies, as well as baby products and diapers from top brands. 
+        Our mission is to make quality products accessible to everyone while ensuring excellent customer service..</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 03100334422</p>
+    <p>📍 Location: ZK Medical and Diaper House, Karachi</p>
+    
+    <!-- Google Map -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123456789!2d67.0012345!3d24.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1234567890%3A0xabcdef1234567890!2sZK%20Medical%20%26%20Diaper%20House!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <!-- WhatsApp Button -->
+    <p style="text-align:center; margin-top:15px;">
+    <a href="https://wa.me/923100334422" target="_blank" class="whatsapp-btn">Order via WhatsApp</a>
+</p>
+
+</section>
+
+<footer>
+    <p>© 2026 ZK Medical and Diaper House</p>
+</footer>
+
+</body>
+</html>
